@@ -1,25 +1,29 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
- * Low Author Fieldtype class
+ * Low Author
  *
- * @package        low_author
- * @author         Lodewijk Schutte <hi@gotolow.com>
- * @copyright      Copyright (c) 2009-2012, Low
+ * @package		ExpressionEngine
+ * @category	Plugin
+ * @author		Matthew Kirkpatrick
+ * @copyright   Copyright (c) 2020, Matthew Kirkpatrick
+ * @link		https://github.com/javashakes
  */
 
-class Low_author_ft extends EE_Fieldtype {
+// config
+include(PATH_THIRD.'low_author/config.php');
 
-	/**
-	 * Info array
-	 *
-	 * @access     public
-	 * @var        array
-	 */
-	public $info = array(
-		'name'    => 'Low Author',
-		'version' => '0.0.1'
-	);
+// EE v2 backward compatibility
+// Ignored by EE v3+
+$plugin_info = array(
+    'pi_name'           => LOW_AUTHOR_NAME,
+    'pi_version'        => LOW_AUTHOR_VERSION,
+    'pi_author'         => LOW_AUTHOR_AUTHOR,
+    'pi_author_url'     => LOW_AUTHOR_AUTHOR_URL,
+    'pi_description'    => LOW_AUTHOR_DESC
+);
+
+class Low_author_ft extends EE_Fieldtype {
 
 	// --------------------------------------------------------------------
 	//  METHODS
@@ -175,4 +179,6 @@ class Low_author_ft extends EE_Fieldtype {
 	}
 
 }
-// END Low_author_ft class
+
+/* End of file pi.low_author.php */
+/* Location: ./system/expressionengine/third_party/low_author/pi.low_author.php */
