@@ -13,17 +13,12 @@
 // config
 include(PATH_THIRD.'low_author/config.php');
 
-// EE v2 backward compatibility
-// Ignored by EE v3+
-$plugin_info = array(
-    'pi_name'           => LOW_AUTHOR_NAME,
-    'pi_version'        => LOW_AUTHOR_VERSION,
-    'pi_author'         => LOW_AUTHOR_AUTHOR,
-    'pi_author_url'     => LOW_AUTHOR_AUTHOR_URL,
-    'pi_description'    => LOW_AUTHOR_DESC
-);
-
 class Low_author_ft extends EE_Fieldtype {
+
+	$info = array(
+	    'name'           => LOW_AUTHOR_NAME,
+	    'version'        => LOW_AUTHOR_VERSION
+	);
 
 	// --------------------------------------------------------------------
 	//  METHODS

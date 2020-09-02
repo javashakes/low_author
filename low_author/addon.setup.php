@@ -21,7 +21,13 @@ return array(
     'docs_url'          => LOW_AUTHOR_DOCS,
     'description'       => LOW_AUTHOR_DESC,
     'namespace'         => LOW_AUTHOR_NAMESPACE,
-    'settings_exist'    => FALSE
+    'settings_exist'    => FALSE,
+    'fieldtypes'        => array(
+                                    LOW_AUTHOR_NAMESPACE => array(
+                                        'name'          => LOW_AUTHOR_NAME,
+                                        'compatibility' => 'text'
+                                )
+                            )
 );
 
 /* End of file addon.setup.php */
