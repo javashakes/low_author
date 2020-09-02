@@ -15,7 +15,7 @@ include(PATH_THIRD.'low_author/config.php');
 
 class Low_author_ft extends EE_Fieldtype {
 
-	$info = array(
+	public $info = array(
 	    'name'           => LOW_AUTHOR_NAME,
 	    'version'        => LOW_AUTHOR_VERSION
 	);
