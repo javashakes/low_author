@@ -19,8 +19,8 @@ if ( ! defined('LOW_AUTHOR_NAME'))
     define('LOW_AUTHOR_DOCS',              'https://github.com/javashakes/low_author');
     define('LOW_AUTHOR_DESC',              '<p><strong>An ExpressionEngine add-on to save an entry\'s author\'s screen name as a searchable channel field.</strong></p>Documentation and Usage: <a href="' . LOW_AUTHOR_DOCS . '" target="_blank">' . LOW_AUTHOR_DOCS . '</a>');
     define('LOW_AUTHOR_PACKAGE',           'low_author');
-    define('LOW_AUTHOR_NAMESPACE',         'LowAuthor');
-    define('LOW_AUTHOR_CLASS_NAME',        'Low_author');
+    define('LOW_AUTHOR_NAMESPACE',         'javashakes\LowAuthor');
+    define('LOW_AUTHOR_CLASS_NAME',        'Low_author_ft');
 }
 
 /* End of file config.php */

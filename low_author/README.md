@@ -6,18 +6,17 @@ An ExpressionEngine add-on to save an entry's author's screen name as a searchab
 
 ## Requirements
 
-ExpressionEngine v2+
+ExpressionEngine v3+
 
-*Compatible with EE v2-5*
+*Compatible with EE v3-5*
 
 ## Installation
 
-- **EE v2:** Copy `low_author` directory into `/system/expressionengine/third_party/`
 - **EE v3:** Copy `low_author` directory into `/system/user/addons/`
 - **EE v4:** Copy `low_author` directory into `/system/user/addons/`
 - **EE v5:** Copy `low_author` directory into `/system/user/addons/`
 
-In your ExpressionEngine Control Panel, go to the Fieldtype Add-On Manager associated with your version of EE and find "Low Author" and install!
+In your ExpressionEngine Control Panel, go to the Add-On Manager, find "Low Author" and install!
 
 ## Usage
 
@@ -30,6 +29,7 @@ Adding a Low Author field to an existing channel will auto-populate the field fo
 ### 1.0.0 *(2020-09-02)*
 
 - ExpressionEngine 3+ compatibility
+- Removed `post_save_settings` method as it now fires before the column is created.
 - Updated documentation
 - Added License
 - Added Disclaimer

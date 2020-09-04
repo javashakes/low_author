@@ -23,7 +23,7 @@ return array(
     'namespace'         => LOW_AUTHOR_NAMESPACE,
     'settings_exist'    => FALSE,
     'fieldtypes'        => array(
-                                    LOW_AUTHOR_NAMESPACE => array(
+                                    LOW_AUTHOR_PACKAGE => array(
                                         'name'          => LOW_AUTHOR_NAME,
                                         'compatibility' => 'text'
                                 )
